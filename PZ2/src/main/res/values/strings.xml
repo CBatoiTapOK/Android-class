@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PZ2</string>
+    <string name="WelcomeText">Пожалуй, лучший фитнес\n трекер в ДВФУ</string>
+    <string name="RegistrationTextButton">Зарегистрироваться</string>
+    <string name="LoginButton">Уже есть аккаунт?</string>
+    <string name="SubWelcomeText">Созданный студентами</string>
+    <string name="bicycles">\?\n</string>
+    <string name="RegistrationText">Регистрация</string>
+    <string name="LoginText">Логин</string>
+    <string name="NicknameText">Имя или никнейм</string>
+    <string name="PasswordText">Пароль</string>
+    <string name="RepeatPasswordText">Повторите пароль</string>
+    <string name="GenderText">Пол</string>
+    <string name="Male">Мужской</string>
+    <string name="Female">Женский</string>
+    <string name="Other">Другой</string>
+    <string name="agreement">Нажимая на кнопку, вы соглашаетесь \nс политикой конфиденциальности и обработки персональных данных, а также принимаете пользовательское соглашение</string>
+    <string name="EnterText">Вход</string>
+    <string name="EnterTextButton">Войти</string>
+</resources>

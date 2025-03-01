@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/PZ1" />
+            <option value="$PROJECT_DIR$/PZ2" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

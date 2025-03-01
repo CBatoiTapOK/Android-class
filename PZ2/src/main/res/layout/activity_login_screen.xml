@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@null"
+        android:importantForAccessibility="no"
+        android:padding="8dp"
+        android:src="@drawable/ic_back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/LoginText"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/LoginText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/EnterText"
+        android:gravity="center_vertical"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        android:layout_marginRight="16dp"
+
+        app:layout_constraintStart_toEndOf="@id/BackButton"
+        app:layout_constraintBottom_toBottomOf="@id/BackButton"
+        app:layout_constraintTop_toTopOf="@id/BackButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/BicyclesImage"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_marginTop="40dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LoginText"
+        android:src="@drawable/bicycles" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LoginField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="@id/BackButton"
+        app:layout_constraintEnd_toEndOf="@id/LoginText"
+        app:layout_constraintTop_toBottomOf="@id/BicyclesImage"
+        android:hint="@string/LoginText">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:inputType="textNoSuggestions|textFilter"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PasswordField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/BackButton"
+        app:layout_constraintEnd_toEndOf="@id/LoginText"
+        app:layout_constraintTop_toBottomOf="@id/LoginField"
+        app:endIconMode="password_toggle"
+        android:hint="@string/PasswordText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/RegistrationButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#4B09F3"
+        android:fontFamily="@font/inter_bold"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingVertical="16dp"
+        android:text="@string/EnterTextButton"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:letterSpacing="0"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@id/LoginText"
+        app:layout_constraintStart_toStartOf="@id/BackButton"
+        app:layout_constraintTop_toBottomOf="@id/PasswordField" />
+</androidx.constraintlayout.widget.ConstraintLayout>
