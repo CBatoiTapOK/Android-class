@@ -22,6 +22,13 @@ class RegistrationScreenActivity : Activity() {
 
             startActivity(backIntent)
         }
+
+        binding.RegistrationButton.setOnClickListener {
+
+            val backIntent = Intent(this, ActivScreenActivity::class.java)
+
+            startActivity(backIntent)
+        }
     }
 
 }

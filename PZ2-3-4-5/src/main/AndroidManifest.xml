@@ -19,7 +19,8 @@
 
         <activity
             android:name=".WelcomeScreenActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,6 +28,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegistrationScreenActivity" />
+        <activity android:name=".ActivScreenActivity" />
     </application>
 
 </manifest>
