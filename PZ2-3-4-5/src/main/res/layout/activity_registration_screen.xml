@@ -52,6 +52,7 @@
             android:hint="@string/LoginText">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LoginEdit"
                 android:inputType="textNoSuggestions|textFilter"
                 android:maxLines="1"
                 android:layout_width="match_parent"
@@ -72,6 +73,7 @@
             android:hint="@string/NicknameText">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NicknameEdit"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/inter"
@@ -94,6 +96,7 @@
             android:hint="@string/PasswordText">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PasswordEdit"
                 android:maxLines="1"
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
@@ -115,6 +118,7 @@
             android:hint="@string/RepeatPasswordText">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RepeatPasswordEdit"
                 android:maxLines="1"
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
@@ -203,6 +207,7 @@
             app:layout_constraintTop_toBottomOf="@id/radioGroup" />
 
         <TextView
+            android:id="@+id/agreement"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter"

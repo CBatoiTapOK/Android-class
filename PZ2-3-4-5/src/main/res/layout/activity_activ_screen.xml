@@ -12,20 +12,22 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        style="@style/CustomBottomNav"
         android:id="@+id/bottomNavigationView"
+        style="@style/CustomBottomNav"
         android:layout_width="0dp"
         android:layout_height="56dp"
         app:itemHorizontalTranslationEnabled="false"
+        app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/activities_menu"
-        />
+        app:menu="@menu/activities_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

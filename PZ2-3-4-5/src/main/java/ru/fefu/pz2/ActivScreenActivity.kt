@@ -1,14 +1,11 @@
 package ru.fefu.pz2
 
-import android.app.Activity
-import android.content.Intent
 import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentActivity
-import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import ru.fefu.pz2.databinding.ActivityActivScreenBinding
+
 
 
 class ActivScreenActivity: AppCompatActivity() {
@@ -20,9 +17,11 @@ class ActivScreenActivity: AppCompatActivity() {
 
         binding = ActivityActivScreenBinding.inflate(layoutInflater)
 
-        val bottomNavigationView = binding.bottomNavigationView
 
-        // (костыль т.к в задании попросили navigationView а у нас всего 2 элемента)
+        val bottomNavigationView = binding.bottomNavigationView
+        setContentView(binding.root)
+
+
         val menuView = bottomNavigationView.getChildAt(0) as? BottomNavigationView
         menuView?.let {
             for (i in 0 until it.childCount) {
@@ -41,10 +40,6 @@ class ActivScreenActivity: AppCompatActivity() {
                 commit()
             }
         }
-
-        setContentView(binding.root)
-
-
 
         binding.bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -69,3 +64,4 @@ class ActivScreenActivity: AppCompatActivity() {
     }
 
 }
+

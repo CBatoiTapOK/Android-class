@@ -21,6 +21,18 @@
     <string name="friends_activity">Пользователей</string>
     <string name="activity">Активность</string>
     <string name="profile">Профиль</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="time_to">Время потренить</string>
+    <string name="time_to_under">Нажимай на кнопку ниже и начинаем трекать активность</string>
+    <string name="start_activity_text">Погнали? :)</string>
+    <string name="start_activity">Начать</string>
+    <string name="save_changes">Сохранить</string>
+    <string name="login_hint">Логин</string>
+    <string name="username_hint">Имя или никнейм</string>
+    <string name="change_password_text">Изменить пароль</string>
+    <string name="logout_text">Выйти</string>
+    <string name="old_password_hint">Старый пароль</string>
+    <string name="new_password_hint">Новый пароль</string>
+    <string name="repeat_new_password_hint">Повторите новый пароль</string>
+    <string name="agree_changes_text">Принять</string>
 </resources>
